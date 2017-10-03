@@ -9,9 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.12.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/naderscode/chattime.git"
@@ -20,5 +17,8 @@
     "url": "https://github.com/naderscode/chattime/issues"
   },
   "homepage": "https://github.com/naderscode/chattime#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
