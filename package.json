@@ -1,0 +1,24 @@
+{
+  "name": "chattime",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naderscode/chattime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naderscode/chattime/issues"
+  },
+  "homepage": "https://github.com/naderscode/chattime#readme",
+  "description": ""
+}
