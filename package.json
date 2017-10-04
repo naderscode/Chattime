@@ -20,5 +20,8 @@
   "description": "",
   "devDependencies": {
     "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "ws": "^3.2.0"
   }
 }
