@@ -11,7 +11,7 @@
   },
   "browserify": {
     "transform": [
-      ["babelify",{"presets": ["es2015"], "sourcemap": true}]
+      ["babelify",{"presets": ["es2015"], "sourceMap": true}]
     ]
   },
   "author": "",
