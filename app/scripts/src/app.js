@@ -3,4 +3,5 @@ class ChatApp {
     console.log('ChatApp constructor');
   }
 }
-new ChatApp();
+//new ChatApp();
+export default ChatApp;
