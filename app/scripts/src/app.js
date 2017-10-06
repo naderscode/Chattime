@@ -1,6 +1,9 @@
+import socket from './ws-client'
+
 class ChatApp {
   constructor(){
     console.log('ChatApp constructor');
+    socket.init('ws://localhost:8000');
   }
 }
 
