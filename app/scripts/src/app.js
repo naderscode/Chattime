@@ -2,10 +2,9 @@ import socket from './ws-client'
 
 class ChatApp {
   constructor(){
-    console.log('ChatApp constructor');
     socket.init('ws://localhost:8000');
     socket.registerOpenHandler(() => {
-      let message = new ChatMessage({ message: 'Hello there!' });
+      let message = new ChatMessage({ message: 'Hello there'});
       socket.sendMessage(message.serialize());
     });
     socket.registerMessageHandler((data) => {
@@ -20,9 +19,9 @@ class ChatMessage {
     user: u='Nader',
     timestamp: t=(new Date()).getTime()
   }) {
-    this.message = message;
-    this.user = user;
-    this.timestamp = timestamp;
+    this.message = m;
+    this.user = u;
+    this.timestamp = t;
   }
   serialize(){
     return {
@@ -34,6 +33,4 @@ class ChatMessage {
   }
 }
 
-
-//new ChatApp();
 export default ChatApp;
