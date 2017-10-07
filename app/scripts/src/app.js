@@ -4,6 +4,13 @@ class ChatApp {
   constructor(){
     console.log('ChatApp constructor');
     socket.init('ws://localhost:8000');
+    socket.registerOpenHandler(() => {
+      let message = new ChatMessage({message: 'Hello there!'});
+      socket.sendMessage(message.serialize());
+    });
+    socket.registerMessageHandler((data) => {
+      console.log(data);
+    });
   }
 }
 
