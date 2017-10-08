@@ -58,7 +58,7 @@ export class ChatList {
       text: moment(t).fromNow()
     }));
 
-    $message.append($('<span>', {
+    $message.append($('<p>', {
       'class': 'message-message',
       text: m
     }));
