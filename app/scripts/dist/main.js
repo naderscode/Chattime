@@ -1,1 +1,1 @@
-console.error("SyntaxError: /Users/ned/git/chattime/app/scripts/src/dom.js: Unexpected token (57:0) while parsing file: /Users/ned/git/chattime/app/scripts/src/dom.js");
+console.error("SyntaxError: /Users/ned/git/chattime/app/scripts/src/dom.js: Unexpected token (69:0) while parsing file: /Users/ned/git/chattime/app/scripts/src/dom.js");
