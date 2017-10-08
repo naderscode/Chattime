@@ -17,22 +17,22 @@ export class ChatForm {
     }
 }
 
-export class ChatList {
-  constructor(listSel, username) {
-    this.$list = $(listSel);
-    this.username = username;
+  export class ChatList {
+    constructor(listSel, username) {
+      this.$list = $(listSel);
+      this.username = username;
   }
 
-  drawMessage({user: u, timestamp: t, message: m}){
+  drawMessage({user: u, timestamp: t, message: m}) {
     let $messageRow = $('<li>', {
       'class': 'message-row'
     });
 
-    if (this.username === u){
+    if (this.username === u) {
       $messageRow.addClass('me');
     }
 
-    let $message = $('p');
+    let $message = $('<p>');
 
     $message.append($('<span>', {
       'class': 'message-username',
@@ -41,7 +41,8 @@ export class ChatList {
 
     $message.append($('<span>', {
       'class': 'timestamp',
-      text: (new Date(t)).getTime()
+      'data-time': t,
+      text: moment(t).fromNow()
     }));
 
     $message.append($('<span>', {
@@ -49,5 +50,7 @@ export class ChatList {
       text: m
     }));
 
+   $messageRow.append($message);
+   this.$list.append($messageRow);
+   $messageRow.get(0).scrollIntoView();
   }
-}

@@ -13,7 +13,7 @@ function registerOpenHandler(handlerFunction){
   };
 }
 
-function registerMessageHandler(handlerFunction){
+function registerMessageHandler(handlerFunction) {
   socket.onmessage = (e) => {
     console.log('message', e.data);
     let data = JSON.parse(e.data);
