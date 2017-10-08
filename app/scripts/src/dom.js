@@ -49,7 +49,7 @@ export class ChatList {
 
     $message.append($('<span>', {
       'class': 'message-username',
-      text: u
+      text: u + ',  '
     }));
 
     $message.append($('<span>', {

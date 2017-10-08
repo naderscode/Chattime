@@ -59,7 +59,20 @@ ul, ul.panel-body {
 }
 
 .message-message {
+  font-family: monospace;
+  font-size: 1.2em;
   display: block;
+  background-color: #ccffff;
+  border-radius: 5px;
+  padding:5px 10px;
+}
+
+.me .message-message {
+  display: block;
+  color: red;
+  background-color: #e6ffe6;
+  border-radius: 5px;
+  padding:5px 10px;
 }
 
 .message-username + .timestamp {
@@ -70,4 +83,3 @@ ul, ul.panel-body {
   font-style: italic;
   /*        display: block; */
 }
-
